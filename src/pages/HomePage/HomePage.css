@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.homepage > .homepage-title {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #fefae0;
+}
+
+.homepage > form {
+  height: fit-content;
+  padding: 20px;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+/******** Select list *******/
+.homepage > form > .select {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  margin-bottom: 35px;
+  color: #444;
+}
+
+.selected-text {
+  background-color: #fefae0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.selected-text:hover {
+  cursor: pointer;
+  background-color: #faedcd;
+}
+
+.select-items {
+  background-color: #dda15e;
+  position: absolute;
+  left: auto;
+  right: auto;
+  width: 102%;
+  height: 8.3rem;
+  overflow-y: scroll;
+  margin-top: 10px;
+  transition: 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.select-items::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+  border-radius: 10px;
+}
+
+.select-items::-webkit-scrollbar-thumb {
+  background-color: #606c38;
+  border-radius: 10px;
+}
+
+.select-items.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.select-item {
+  background-color: #fefae0;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.select-item:hover {
+  cursor: pointer;
+  background-color: #606c38;
+  color: white;
+}
+
+.category-select {
+  z-index: 2;
+}
+
+.difficulty-select {
+  z-index: 1;
+}
+
+.MuiSlider-rail {
+  color: #fefae0 !important;
+}
+
+.MuiSlider-track {
+  color: #606c38 !important;
+}
+
+.MuiSlider-thumb {
+  color: #606c38 !important;
+}
+
+.MuiSlider-valueLabel {
+  background-color: #606c38 !important;
+  color: #fefae0 !important;
+}
+
+.limit > p {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.homepage > form > button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.3s ease;
+  background-color: #fefae0;
+  color: #444;
+}
+
+.homepage > form > button:hover {
+  cursor: pointer;
+  background-color: #606c38;
+  color: white;
+}
